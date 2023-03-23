@@ -1,4 +1,4 @@
-import { faBed, faCar, faPlane, faTaxi, faPerson, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+import { faBed, faPerson, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './header.css'
 import { DateRange } from 'react-date-range';
@@ -47,37 +47,17 @@ const handleOption = (name, operation)=>{
     <div className='header'>
       <div className={type === "list" ? "headerContainer listMode" : "headerContainer" }>
         <div className="headerList">
-             <div className="headerListItem active">
-                <FontAwesomeIcon icon={faBed} /> 
-                <span>Stays</span>
-             </div>
-             <div className="headerListItem">
-                <FontAwesomeIcon icon={faPlane} /> 
-                <span>Flights</span>
-             </div>
-             <div className="headerListItem">
-                <FontAwesomeIcon icon={faCar} /> 
-                <span>Car rentals</span>
-             </div>
-             <div className="headerListItem">
-                <FontAwesomeIcon icon={faBed} /> 
-                <span>Attraction</span>
-             </div>
-             <div className="headerListItem">
-                <FontAwesomeIcon icon={faTaxi} /> 
-                <span>Airport taxis</span>
-             </div>
         </div>
         { type !=="list" &&
          <>
-        <h1 className="headerTitle">BookStay Hotels a luxurious hotel for travelers seeking an upscale and relaxing getaway</h1>
+        <h1 className="headerTitle">A luxurious hotel for travelers seeking an upscale and relaxing getaway</h1>
         <p className="headerDesc">From spacious luxury rooms and everything in between</p>
        {/* <button className='headerBtn'>Sign in / Regiser</button> */}
         <div className="headerSearch">
             <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className='headerIcon'/>
                 <input type="text "
-                        placeholder='Where are you going'
+                        placeholder='Be our guest'
                         className='headerSearchInput'
                         onChange={(e) => setDestination(e.target.value)}
                 />

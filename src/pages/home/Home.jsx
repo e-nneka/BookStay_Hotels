@@ -1,5 +1,5 @@
- import './home.css'
- import Navbar from "../../components/navbar/Navbar.jsx";
+import './home.css'
+import Navbar from "../../components/navbar/Navbar.jsx";
 import Header from '../../components/header/Header';
 import Featured from '../../components/featured/Featured';
 import FeaturedProperties from "../../components/featuredProperties/FeaturedProperties";
@@ -7,7 +7,6 @@ import PropertyList from "../../components/propertyList/PropertyList";
 import Footer from "../../components/footer/Footer";
 import MailList from "../../components/mailList/MailList";
 
- 
  const Home = () => {
    return (
      <div>

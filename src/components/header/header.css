@@ -6,6 +6,14 @@
     position: relative;
 }
 
+.headerTitle{
+    text-align: center;
+}
+
+.headerDesc{
+    text-align: center;
+}
+
 .headerContainer{
     width: 100%;
     max-width: 1024px;
